@@ -8,6 +8,7 @@ public class arithmetic {
             result=n1/n2;
         }catch(ArithmeticException ae){
             System.out.println(ae);
+            throw ae;
         }finally{
             System.out.println("final");
         }
