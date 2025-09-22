@@ -8,7 +8,7 @@ public class Divisors {
                 list.add(i);
             }
         }
-        // Convert ArrayList to int[]
+       
         int[] result = new int[list.size()];
         for (int i = 0; i < list.size(); i++) {
             result[i] = list.get(i);
