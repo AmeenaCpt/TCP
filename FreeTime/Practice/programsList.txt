@@ -1,0 +1,11 @@
+1.ArmStrong
+2.CountDigit
+3.Divisors
+4.GCD
+5.Reverse
+6.Palindrome
+7.Prime
+8.Factorial
+9.Fibonnaci
+DSA
+1.Hashing(Fetch data)
