@@ -9,3 +9,7 @@
 9.Fibonnaci
 DSA
 1.Hashing(Fetch data)
+23-09
+String Contains
+MergeAndSort
+SumEqlRemaing

@@ -29,5 +29,6 @@ class Main {
 
         int result = countingValley(n, path);
         System.out.println(result);
+        sc.close();
     }
 }
