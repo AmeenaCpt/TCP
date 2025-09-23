@@ -14,9 +14,9 @@ public class MergeAndSort {
         for(int i=0;i<temp.length-1;i++){
             for(int j=0;j<temp.length-1-i;j++){
                 if(temp[j]>temp[j+1]){
-                    int temp1=a[j];
-                    a[j]=a[j+1];
-                    a[j+1]=temp1;
+                    int temp1=temp[j];
+                    temp[j]=temp[j+1];
+                    temp[j+1]=temp1;
                 }
             }
         }
