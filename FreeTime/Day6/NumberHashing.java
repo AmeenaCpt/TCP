@@ -1,31 +1,26 @@
 package FreeTime.Day6;
-
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
-
-public class NumberHash {
+import java.util.*;
+public class NumberHashing {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
         int n = sc.nextInt();
         int[] a = new int[n];
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-
-        // frequency map
-        Map<Integer, Integer> hash = new HashMap<>();
-        for (int num : a) {
-            hash.put(num, hash.getOrDefault(num, 0) + 1);
+        int[] hash=new int[100];
+        for(int i=0;i<n;i++){
+            hash[a[i]]++;
         }
-
         int q = sc.nextInt();
+        int[] result =new int[q];
         for (int i = 0; i < q; i++) {
             int num = sc.nextInt();
-            System.out.println(hash.getOrDefault(num, 0));
+            result[i]=hash[num];
         }
-
+        for(int i=0;i<q;i++){
+            System.out.println(result[i]);
+        }
         sc.close();
     }
 }
