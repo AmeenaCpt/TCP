@@ -1,7 +1,5 @@
 package FreeTime.Day8Sorings;
-
 import java.util.Scanner;
-
 public class Insertion {
     public static void solve(int[] a){
         int n=a.length;

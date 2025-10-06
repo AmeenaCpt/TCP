@@ -4,33 +4,24 @@ import java.util.*;
 class Solution {
     public List<List<Integer>> countFrequencies(int[] nums) {
         Map<Integer, Integer> freqMap = new HashMap<>();
-
-        // Count frequencies
         for (int num : nums) {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
         }
-
-        // Convert to List<List<Integer>>
         List<List<Integer>> result = new ArrayList<>();
         for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
             result.add(Arrays.asList(entry.getKey(), entry.getValue()));
         }
-
         return result;
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] a = new int[n];
-        
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-
         Solution sol = new Solution();
         List<List<Integer>> ans = sol.countFrequencies(a);
-
         System.out.println(ans);
         sc.close();
     }

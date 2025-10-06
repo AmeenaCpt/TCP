@@ -1,30 +1,22 @@
 package sortingTechniques;
-public class InsertionSort {
-    void sort(int arr[])
-    {
-        int n = arr.length;
-        for (int i = 1; i < n; ++i) {
-            int key = arr[i];
-            int j = i - 1;
-            while (j >= 0 && arr[j] > key) {
-                arr[j + 1] = arr[j];
-                j = j - 1;
+public class InsertionSort{
+    public static void sort(int[] a){
+        int n=a.length;
+        for(int i=0;i<n;i++){
+            int j=i;
+            while(j>0 && a[j-1]>a[j]){
+                int temp=a[j-1];
+                a[j-1]=a[j];
+                a[j]=temp;
+                j--;
             }
-            arr[j + 1] = key;
         }
     }
-    static void printArray(int arr[])
-    {
-        int n = arr.length;
-        for (int i = 0; i < n; ++i)
-            System.out.print(arr[i] + " ");
-        System.out.println();
-    }
-    public static void main(String args[])
-    {
-        int arr[] = { 12, 11, 13, 5, 6 };
-        InsertionSort ob = new InsertionSort();
-        ob.sort(arr);
-        printArray(arr);
+    public static void main(String[] args) {
+        int[] a={5,4,3,2,1};
+        sort(a);
+        for(int i=0;i<a.length;i++){
+            System.out.print(a[i]+" ");
+        }
     }
 }

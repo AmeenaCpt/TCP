@@ -9,12 +9,14 @@
 9.Fibonnaci
 DSA
 1.Hashing(Fetch data)
-23-09
+23-09/Day1
 String Contains
 MergeAndSort
 SumEqlRemaing
+24-09/Day2
 NumberHasing
-24-09
 CharacterHashing
 hashMap(NumberHasing using Hashmap)
+CountingFreq
+highestOccurence
 
