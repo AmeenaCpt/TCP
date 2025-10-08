@@ -4,13 +4,10 @@ public class SingleTime {
     public static void main(String[] args) {
         int[] a = {1, 1, 2, 3, 3, 4, 4};
         int n = a.length;
-
-        // Handle single-element array
         if (n == 1) {
             System.out.println(a[0]);
             return;
         }
-
         for (int i = 0; i < n; i++) {
             // For the first element
             if (i == 0 && a[i] != a[i + 1]) {

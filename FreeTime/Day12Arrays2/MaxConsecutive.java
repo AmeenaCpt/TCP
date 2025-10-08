@@ -1,11 +1,9 @@
 package FreeTime.Day12Arrays2;
-
 public class MaxConsecutive {
     public static void display(int[] a) {
         int maxCount = 1;
         int count = 1;
         int maxNum = a[0];
-
         for (int i = 1; i < a.length; i++) {
             if (a[i] == a[i - 1]) {
                 count++;

@@ -4,9 +4,7 @@ public class LongestSubArrayPositiveK {
     public static void main(String[] args) {
         int[] nums = {10, 5, 2, 7, 1, 9};
         int k = 15;
-
         int maxLen = 0;
-
         // check every subarray
         for (int i = 0; i < nums.length; i++) {
             int sum = 0;
@@ -17,7 +15,6 @@ public class LongestSubArrayPositiveK {
                 }
             }
         }
-
         System.out.println("Length of longest subarray = " + maxLen);
     }
 }
