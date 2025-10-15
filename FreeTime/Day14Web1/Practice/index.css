@@ -1,0 +1,21 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;              /* enable flexbox */
+    justify-content: center;    /* center horizontally */
+    align-items: center;        /* center vertically */
+    text-align: center;         /* center text inside element */
+    
+    background: url("AS1.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+h1 {
+    color: white;
+    font-size: 10vw; 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);              /* text color */
+}

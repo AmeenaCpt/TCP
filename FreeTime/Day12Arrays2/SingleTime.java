@@ -9,7 +9,6 @@ public class SingleTime {
             return;
         }
         for (int i = 0; i < n; i++) {
-            // For the first element
             if (i == 0 && a[i] != a[i + 1]) {
                 System.out.println(a[i]);
                 break;
