@@ -8,9 +8,6 @@ public class fetch {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-        //int maxVal = ...; // largest number in your input
-        //int[] hash = new int[maxVal + 1];
-
         int[] hash = new int[13];
         for (int i = 0; i < n; i++) {
             if (a[i] >= 0 && a[i] < 13) {

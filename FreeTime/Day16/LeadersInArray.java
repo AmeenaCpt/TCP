@@ -14,16 +14,12 @@ public class LeadersInArray {
                 maxFromRight = nums[i];
             }
         }
-        
-        // Reverse to keep order same as original array
         Collections.reverse(leaders);
         return leaders;
     }
-
     public static void main(String[] args) {
         int[] nums1 = {1, 2, 5, 3, 1, 2};
         int[] nums2 = {-3, 4, 5, 1, -4, -5};
-
         System.out.println(findLeaders(nums1)); // [5, 3, 2]
         System.out.println(findLeaders(nums2)); // [5, 1, -4, -5]
     }

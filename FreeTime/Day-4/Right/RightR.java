@@ -3,7 +3,7 @@ public class RightR {
         for (int i = 0; i < n; i++) {
             // spaces first
             for (int j = i; j < n - 1; j++) {
-                System.out.print("  "); // two spaces for alignment
+                System.out.print("  "); 
             }
             // stars
             for (int j = 0; j <= i; j++) {
