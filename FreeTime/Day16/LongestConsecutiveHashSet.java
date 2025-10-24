@@ -1,7 +1,6 @@
 package FreeTime.Day16;
 import java.util.Set;
 import java.util.HashSet;
-
 public class LongestConsecutiveHashSet {
     public static void print(int[] a){
         Set<Integer> set=new HashSet<>();
